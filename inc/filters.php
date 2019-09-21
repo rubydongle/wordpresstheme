@@ -102,6 +102,7 @@ add_filter( 'pre_get_avatar_data', function( $args, $id_or_email ) {
 // Excerpt more --------------->
 add_filter('excerpt_more', function ( $more ) 
 {
+    return;
     if(! is_admin()) {
         /* translators: %s: Name of current post */
         $link = sprintf('<a href="%1$s" class="more-link read-more" rel="bookmark">%2$s</a>', esc_url(get_permalink(get_the_ID())), sprintf(__('Continue Reading %s', 'wordstar'), '<span class="screen-reader-text">'.get_the_title(get_the_ID()).'</span><i class="fa fa-arrow-right"></i>'));
@@ -111,8 +112,8 @@ add_filter('excerpt_more', function ( $more )
 
 
 // Excerpt character length --------------->
-    add_filter('excerpt_length', function ( $length ) {
-    return 50;
+add_filter('excerpt_length', function ( $length ) {
+    return 150;
 }, 999);
 
 
