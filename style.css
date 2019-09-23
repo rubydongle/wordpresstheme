@@ -145,8 +145,9 @@ h1, h2, h3, h4, h5, h6 {
 p { margin: 0 0 10px; }
 dfn, cite, em, i { font-style: italic; }
 blockquote {
-	border: 0 solid #1a1a1a;
+	border: 0 solid #1a1a1a1f;
 	border-left-width: 4px;
+	background-color: #2a272708;
 	color: #686868;
 	font-size: 19px;
 	font-size: 1.1875rem;
